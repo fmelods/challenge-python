@@ -1,4 +1,4 @@
-# Este código Python é um sistema de login e menu de funcionalidades do Site MechAI.
+# Este código Python é um sistema de login e menu de funcionalidades do Site AItoFix.
 
 import os
 
@@ -43,7 +43,7 @@ print ()
 
 # Menu Principal com 3 Funcionalidades e Saída
 def menu_principal():
-    print("Bem-vindo ao MechAI - Assistente de Diagnóstico e Reparo Automotivo")
+    print("Bem-vindo ao AItoFix - Assistente de Diagnóstico e Reparo Automotivo")
     print("1 - Diagnóstico do Veículo")
     print("2 - Encontrar Mecânicos Próximos")
     print("3 - Confirmar Serviço")
@@ -70,7 +70,7 @@ def encontrar_mecanicos(problema):
     os.system('cls' if os.name == 'nt' else 'clear')
     print("\nEncontrando mecânicos próximos que podem resolver: ", problema)
     # Simulação de opções de mecânicos
-    mecanicos = [('Alberto - Auto Fix', '14:00 PM - 22 de abril'), ('Ricardo - FindRepair', '11:30 AM - 23 de abril')]
+    mecanicos = [('Alberto - MechFix', '14:00 PM - 22 de abril'), ('Ricardo - FindRepair', '11:30 AM - 23 de abril')]
     for i, mecanico in enumerate(mecanicos):
         print(f"{i+1} - {mecanico[0]}, horários disponíveis: {mecanico[1]}")
     
@@ -123,7 +123,7 @@ def main():
         # Saída
         elif escolha == '0':
             os.system('cls' if os.name == 'nt' else 'clear')
-            print("Obrigado por usar o MechAI. Até mais!")
+            print("Obrigado por usar o AItoFix. Até mais!")
             break
         else:
             print("Opção inválida. Por favor, tente novamente.")
